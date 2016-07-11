@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'UIScrollView-ScrollAvailableIndicators_Example' do
+  pod 'UIScrollView-ScrollAvailableIndicators', :path => '../'
+
+  target 'UIScrollView-ScrollAvailableIndicators_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

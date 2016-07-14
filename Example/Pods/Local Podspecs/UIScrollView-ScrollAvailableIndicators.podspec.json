@@ -1,0 +1,22 @@
+{
+  "name": "UIScrollView-ScrollAvailableIndicators",
+  "version": "0.1.0",
+  "summary": "A short description of UIScrollView-ScrollAvailableIndicators.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/UIScrollView-ScrollAvailableIndicators",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Konstantin Kabanov": "konstantin@rktstudio.ru"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/UIScrollView-ScrollAvailableIndicators.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UIScrollView-ScrollAvailableIndicators/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - UIScrollView-ScrollAvailableIndicators (0.1.0)
+
+DEPENDENCIES:
+  - UIScrollView-ScrollAvailableIndicators (from `../`)
+
+EXTERNAL SOURCES:
+  UIScrollView-ScrollAvailableIndicators:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UIScrollView-ScrollAvailableIndicators: abde8171b35186bf22e688beacb98db0f64e7ef5
+
+PODFILE CHECKSUM: d8825f54b6c682513440255fc60ee244c84a6d08
+
+COCOAPODS: 1.0.1

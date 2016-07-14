@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import UIScrollView_ScrollAvailableIndicators
 
 class ViewController: UIViewController {
+	@IBOutlet weak var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	override func preferredStatusBarStyle() -> UIStatusBarStyle {
+		return .LightContent
+	}
 
+	@IBAction func addRecordButtonAction(sender: AnyObject) {
+		scrollView.showsVerticalScrollAvailableIndicators = !scrollView.showsVerticalScrollAvailableIndicators
+	}
 }
 

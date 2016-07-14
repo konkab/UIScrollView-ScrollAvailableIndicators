@@ -1,0 +1,6 @@
+framework module UIScrollView_ScrollAvailableIndicators {
+  umbrella header "UIScrollView-ScrollAvailableIndicators-umbrella.h"
+
+  export *
+  module * { export * }
+}

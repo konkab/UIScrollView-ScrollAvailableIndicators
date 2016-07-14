@@ -21,12 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/UIScrollView-ScrollAvailableIndicators'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/konkab/UIScrollView-ScrollAvailableIndicators'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Konstantin Kabanov' => 'konstantin@rktstudio.ru' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/UIScrollView-ScrollAvailableIndicators.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/konkab/UIScrollView-ScrollAvailableIndicators.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://www.facebook.com/fvr000'
 
   s.ios.deployment_target = '8.0'
 

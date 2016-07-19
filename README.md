@@ -7,6 +7,9 @@
 
 UIScrollView extension that adds top and bottom hairline indicators when scroll is available. Works out of the box through IBInspectable and Interface Builder.
 
+# Demo
+![UIScrollView-ScrollAvailableIndicators](https://raw.githubusercontent.com/konkab/UIScrollView-ScrollAvailableIndicators/master/video.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

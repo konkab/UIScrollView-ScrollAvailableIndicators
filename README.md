@@ -27,7 +27,10 @@ pod "UIScrollView-ScrollAvailableIndicators"
 
 ## Author
 
-Konstantin Kabanov, konstantin@rktstudio.ru
+Konstantin Kabanov:
+- konstantin@rktstudio.ru
+- [Skype](skype:konstantin_kabanov)
+- [Linkedin](https://ru.linkedin.com/in/konstantinkabanov)
 
 ## License
 

@@ -39,10 +39,10 @@ extension UIScrollView {
 				return view
 			}
 			
-			topIndicatorView = UIView()
-			topIndicatorView.alpha = 0.0
+			self.topIndicatorView = UIView()
+			self.topIndicatorView.alpha = 0.0
 			
-			return topIndicatorView
+			return self.topIndicatorView
 		}
 		set(newValue) {
 			objc_setAssociatedObject(self, &AssociatedKeys.TopIndicatorView, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
@@ -55,10 +55,10 @@ extension UIScrollView {
 				return view
 			}
 			
-			bottomIndicatorView = UIView()
-			bottomIndicatorView.alpha = 0.0
+			self.bottomIndicatorView = UIView()
+			self.bottomIndicatorView.alpha = 0.0
 			
-			return bottomIndicatorView
+			return self.bottomIndicatorView
 		}
 		set(newValue) {
 			objc_setAssociatedObject(self, &AssociatedKeys.BottomIndicatorView, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
@@ -71,14 +71,14 @@ extension UIScrollView {
 				return shows
 			}
 			
-			showsVerticalScrollAvailableIndicators = false
+			self.showsVerticalScrollAvailableIndicators = false
 			
-			return showsVerticalScrollAvailableIndicators
+			return self.showsVerticalScrollAvailableIndicators
 		}
 		set(newValue) {
 			objc_setAssociatedObject(self, &AssociatedKeys.ShowsVerticalScrollAvailableIndicators, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
 			
-			if showsVerticalScrollAvailableIndicators {
+			if self.showsVerticalScrollAvailableIndicators {
 				addObserver(self, forKeyPath: "contentOffset", options: .New, context: nil)
 			} else {
 				removeObserver(self, forKeyPath: "contentOffset")
@@ -94,15 +94,15 @@ extension UIScrollView {
 				return color
 			}
 			
-			scrollAvailableIndicatorsColor = UIColor.blackColor()
+			self.scrollAvailableIndicatorsColor = UIColor.blackColor()
 			
-			return scrollAvailableIndicatorsColor
+			return self.scrollAvailableIndicatorsColor
 		}
 		set(newValue) {
 			objc_setAssociatedObject(self, &AssociatedKeys.ScrollAvailableIndicatorsColor, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
 			
-			topIndicatorView.backgroundColor = newValue
-			bottomIndicatorView.backgroundColor = newValue
+			self.topIndicatorView.backgroundColor = newValue
+			self.bottomIndicatorView.backgroundColor = newValue
 		}
 	}
 	
@@ -120,8 +120,8 @@ extension UIScrollView {
 	
 	func contentOffsetDidChange(offset: CGPoint) {
 		if showsVerticalScrollAvailableIndicators {
-			addSubview(self.topIndicatorView)
-			addSubview(self.bottomIndicatorView)
+			addSubview(topIndicatorView)
+			addSubview(bottomIndicatorView)
 			
 			topIndicatorView.frame = CGRect(x: 0, y: contentOffset.y, width: bounds.width, height: thickness)
 			bottomIndicatorView.frame = CGRect(x: 0, y: contentOffset.y + (bounds.height - thickness), width: bounds.width, height: thickness)

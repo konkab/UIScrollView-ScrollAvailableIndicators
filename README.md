@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/UIScrollView-ScrollAvailableIndicators.svg?style=flat)](http://cocoapods.org/pods/UIScrollView-ScrollAvailableIndicators)
 [![Platform](https://img.shields.io/cocoapods/p/UIScrollView-ScrollAvailableIndicators.svg?style=flat)](http://cocoapods.org/pods/UIScrollView-ScrollAvailableIndicators)
 
-UIScrollView extension that adds top and bottom hairline indicators when scroll is available. Useful when designs are not clear on how the scroll view should look like when user scrolls. Works out of the box through IBInspectable and Interface Builder.
+UIScrollView extension that adds top and bottom hairline indicators when scroll is available. Useful when designs are not clear on how the scroll view should look like when user scrolls and prevents the content going to nowhere showing separators on scroll view's bounds. Works out of the box through IBInspectable and Interface Builder.
 
 # Demo
 ![UIScrollView-ScrollAvailableIndicators](https://raw.githubusercontent.com/konkab/UIScrollView-ScrollAvailableIndicators/master/video.gif)
